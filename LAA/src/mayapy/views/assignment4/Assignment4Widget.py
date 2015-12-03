@@ -24,7 +24,53 @@ class Assignment4Widget(PyGlassWidget):
         self.schnauzDownBtn.clicked.connect(self.handleSchnauzDownBtn)
         self.eyebrowUpBtn.clicked.connect(self.handleEyebrowsUpBtn)
         self.eyebrowDwnBtn.clicked.connect(self.handleEyebrowsDwnBtn)
+        self.smileSlider.valueChanged.connect(self.handleSmileSlider)
+        self.schnauzSlider.valueChanged.connect(self.handleSchnauzSlider)
+        self.eyebrowSlider.valueChanged.connect(self.handleEyebrowSlider)
+        self.widenSlider.valueChanged.connect(self.handleWidenSlider)
+        self.lengthSlider.valueChanged.connect(self.handleLengthSlider)
         self.returnHomeBtn.clicked.connect(self.handleReturnHomeBtn)
+
+    def handleWidenSlider(self):
+        value = self.widenSlider.value()
+        cmds.setAttr('headWideBlendShape.amandaHeadWide', value)
+
+    def handleLengthSlider(self):
+        value = self.lengthSlider.value()
+        cmds.setAttr('headWideBlendShape.amandaHeadTall', value)
+
+    def handleSmileSlider(self):
+        topCapAmt = 0.016
+        btmCapAmt = -0.032
+        value = self.smileSlider.value()
+        smileValue = float(value) * float(topCapAmt/10.0)
+        if value < 0:
+            lowSmileValue = float(value) * float(btmCapAmt/10.0)
+            cmds.setAttr('smileClusterHandle.translateY', -lowSmileValue)
+        else:
+            cmds.setAttr('smileClusterHandle.translateY', smileValue)
+
+    def handleSchnauzSlider(self):
+        topCapAmt = 0.028
+        btmCapAmt = 0.000
+        value = self.schnauzSlider.value()
+        schnauzValue = float(value) * float(topCapAmt/10.0)
+        if value < 0:
+            lowSchnauzValue = float(value) * float(btmCapAmt/10.0)
+            cmds.setAttr('schnauzClusterHandle.translateY', -lowSchnauzValue)
+        else:
+            cmds.setAttr('schnauzClusterHandle.translateY', schnauzValue)
+
+    def handleEyebrowSlider(self):
+        topCapAmt = 0.021
+        btmCapAmt = -0.014
+        value = self.eyebrowSlider.value()
+        eyebrowValue = float(value) * float(topCapAmt/10.0)
+        if value < 0:
+            lowEyebrowValue = float(value) * float(btmCapAmt/10.0)
+            cmds.setAttr('eyebrowsClusterHandle.translateY', -lowEyebrowValue)
+        else:
+            cmds.setAttr('eyebrowsClusterHandle.translateY', eyebrowValue)
 
     def handleUpBtn(self):
         global smileActAmt

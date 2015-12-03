@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'C:\Users\Eric\PycharmProjects\LAA\resources\widget\MayaPyHomeWidget\Widget.ui'
 #
-# Created: Sun Nov 29 20:46:00 2015
+# Created: Wed Dec 02 17:55:37 2015
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!

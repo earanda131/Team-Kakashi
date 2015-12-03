@@ -75,7 +75,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Schnauz Up</string>
+    <string>Nose Up</string>
    </property>
   </widget>
   <widget class="QPushButton" name="schnauzDownBtn">
@@ -88,7 +88,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Schnauz Down</string>
+    <string>Nose Down</string>
    </property>
   </widget>
   <widget class="QPushButton" name="eyebrowUpBtn">
@@ -115,6 +115,166 @@
    </property>
    <property name="text">
     <string>Eyebrows Down</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="smileSlider">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>210</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-10</number>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="smileLabel">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>210</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Smile Slider</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="schnauzSlider">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>270</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-10</number>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="noseLabel">
+   <property name="geometry">
+    <rect>
+     <x>59</x>
+     <y>270</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nose Slider</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="eyebrowSlider">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>330</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-10</number>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="eyebrowLabl">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Eyebrow Slider</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="widenSlider">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>390</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="headLabel">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>390</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Widen Head</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="lengthSlider">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>450</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>450</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lengthen Head</string>
    </property>
   </widget>
  </widget>
