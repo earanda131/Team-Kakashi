@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\Eric\PycharmProjects\LAA\resources\widget\Assignment2Widget\Widget.ui'
+# Form implementation generated from reading ui file 'C:\Users\Eric\Documents\GitHub\Team-Kakashi\LAA\resources\widget\Assignment2Widget\Widget.ui'
 #
-# Created: Wed Dec 02 17:55:35 2015
+# Created: Wed Dec 02 18:27:39 2015
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
